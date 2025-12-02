@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="icon" type="image/x-icon"
+            href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF6grvZdQKFrExTR7WmQd1GfnI5m9ZvvXtcQ&s">
+    <title>Enquiry Form</title>
+    <style>
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #0a1a36;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1, h3 {
+    font-weight: bold;
+    color: #0a1a36;
+    margin-bottom: 12px;
+}
+
+
+form {
+    width: 100%;
+    background: #f2f6ff;
+    border: 2px solid #0a1a36;
+    border-radius: 8px;
+    padding: 18px;
+    margin-top: 10px;
+}
+
+
+fieldset {
+    border: 2px solid #0a1a36;
+    border-radius: 6px;
+    padding: 18px;
+    margin-bottom: 20px;
+    background: #ffffff;
+}
+
+
+legend {
+    background: #0a1a36;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 15px;
+}
+
+label {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1.6px solid #0a1a36;
+    border-radius: 5px;
+    font-size: 15px;
+    background: #ffffff;
+    margin-bottom: 14px;
+}
+
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 18px;
+}
+
+
+button, BUTTON {
+    background: #0a1a36;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover, BUTTON:hover {
+    background: #123a6e;
+}
+
+
+a {
+    display: inline-block;
+    background: #0a1a36;
+    color: #ffffff;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #123a6e;
+}
+
+
+hr {
+    border: none;
+    border-top: 2px solid #0a1a36;
+    margin: 20px 0;
+}
+
+
+@media (max-width: 600px) {
+    fieldset {
+        padding: 12px;
+    }
+    button, BUTTON {
+        width: 100%;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+     <h1>Student Enquiry Form</h1>
+
+    <center>
+            <h3><u>Admission Form</u></h>
+        </center>
+        <!-- Form Section -->
+        <form>
+            <fieldset>
+                <legend><b>Personal Information</b></legend>
+                <label for=""><b>Upload photo:</b></label>
+                <right> <input type="file"></right><br><br>
+                <label for=""><b>First Name:</b></label>
+                <input type="text" placeholder="FirstName"><br><br>
+
+                <label for=""><b>Last Name:</b></label>
+                <input type="text" placeholder="LastName"><br><br>
+                <label for=""><b>Parent/ Guardian Name:</b></label>
+                <input type="text" placeholder="Parent/ Guardian Name"><br><br>
+
+                <label for=""><b>Address:</b> </label>
+                <textarea cols="25" rows="2" placeholder="Address"></textarea><br><br>
+            </fieldset>
+            <fieldset>
+                <legend><b>Educational details</b></legend>
+                <label for=""><b>School Name</b></label>
+                <input type="text" placeholder="SchoolName"><br><BR>
+                <label for=""><b>10th Standard / II PUC Board?</b></label>
+                <input type="radio" name="gender" value="F">
+                <label for="a"><i>ICSE</i></label>
+                <input type="radio" name="gender" value="G">
+                <label for="b"><i>CBSE</i></label>
+                <input type="radio" name="gender" value="H">
+                <label for="c"><i>State Board</i></label><br><br>
+
+                <label for=""><b>Marks Obtained:</b></label>
+                <input type="number"><br><br>
+                <label for=""><b>College Name</b></label>
+                <input type="text" placeholder="CollegeName"><br><br>
+                <label for=""><b>12th Standard / II PUC Board?</b></label>
+                <input type="radio" name="gender" value="F">
+                <label for="a"><i>ICSE</i></label>
+                <input type="radio" name="gender" value="G">
+                <label for="b"><i>CBSE</i></label>
+                <input type="radio" name="gender" value="H">
+                <label for="c"><i>PU/State Board</i></label><br><br>
+
+                <label for=""><b>Marks Obtained:</b></label>
+                <input type="number"><br><br>
+            </fieldset>
+            <fieldset>
+                <legend><b>Other</b></legend>
+                <label for=""><b>Preferred Course</b></label><br>
+                <input type="radio" name="gender" value="F">
+                <label for="a"><i>CSE</i></label><br>
+                <input type="radio" name="gender" value="G">
+                <label for="b"><i>ISE</i></label><br>
+                <input type="radio" name="gender" value="H">
+                <label for="c"><i>ECE</i></label><br>
+                <input type="radio" name="gender" value="H">
+                <label for="c"><i>ME</i></label><br>
+                <input type="radio" name="gender" value="H">
+                <label for="c"><i>CIVIL</i></label><br>
+                <input type="radio" name="gender" value="H">
+                <label for="c"><i>AE</i></label><br>
+                <input type="radio" name="gender" value="H">
+                <label for="c"><i>AS</i></label><br>
+            </fieldset>
+            <fieldset>
+                <legend><b>Contact details</b></legend>
+                <label for=""><b>Contact.no:</b> </label>
+                <input type="tel" placeholder="enter number"><br><br>
+                <label for=""><b>Alternative Contact.no:</b> </label>
+                <input type="tel" placeholder="enter number"><br><br>
+                <label for=""><b>Email:</b> </label>
+                <input type="email" placeholder="enter email"><br><br>
+            </fieldset>
+            <button>
+                SUBMIT
+            </button>
+            <BUTTON>RESET</BUTTON>
+            <hr />
+    <br>
+    <a href="index.html">⬅ Back to Home</a>
+</body>
+</html>
